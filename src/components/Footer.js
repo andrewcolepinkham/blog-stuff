@@ -1,12 +1,35 @@
 import React from 'react';
 import './Footer.css';
+import './Cards.css';
+import './ProfileImage.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import ProfileImage from './ProfileImage';
 
 function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
+        <div className='profile-image'>
+          <div className='profile__container'>
+              <ul className='profile__items'>
+                <ProfileImage/>
+                <li className='profile__item'>
+                  <div className='profile__text__header'>Who really is this Andrew guy?
+                    <p className='profile__text__paragraph'>
+                    - Unimportant meduim-tall white male originally from the San Francisco Bay Area. <br/><br/>
+                    - Recently reported to have graduated from Colorado College with a degree in computer science and a minor in mathematics. <br/><br/>
+                    - Unfortunatly the person in question is useless at math. <br/><br/>
+                    - Subject was last seen chasing powder and splitter cracks somewhere in the rocky mountains outside of Boulder CO. <br/><br/>
+                    - Reports indicate that delicious food left out in the open may lure the subject into civilization. <br/><br/>
+                    </p>
+                  </div>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </section>
+      {/* <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
           Join the Adventure newsletter to receive our best vacation deals
         </p>
@@ -59,20 +82,20 @@ function Footer() {
             <Link to='/'>Twitter</Link>
           </div>
         </div>
-      </div>
+      </div> */}
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
+            <Link to='/' className='navbar-logo'>
+              ANDREW PINKHAM 
+            <i class="fa-solid fa-fw fa-person-hiking"></i>
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>2022</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              to='/'
+              to='https://www.facebook.com/andrew.pinkham.9'
               target='_blank'
               aria-label='Facebook'
             >
@@ -80,31 +103,23 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link instagram'
-              to='/'
+              to='https://www.instagram.com/andrew_pinkham/?hl=en'
               target='_blank'
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
             </Link>
             <Link
-              class='social-icon-link youtube'
-              to='/'
+              class='social-icon-link github'
+              to='https://github.com/andrewcolepinkham'
               target='_blank'
-              aria-label='Youtube'
+              aria-label='Github'
             >
-              <i class='fab fa-youtube' />
+              <i class='fab fa-github' />
             </Link>
             <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
+              class='social-icon-link linkedin'
+              to='https://www.linkedin.com/in/andrew-pinkham-53309a167/'
               target='_blank'
               aria-label='LinkedIn'
             >
